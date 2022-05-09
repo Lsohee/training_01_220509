@@ -9,13 +9,29 @@
 <body>
   <script>
     
-    console.log(document.body.clientWidth);
+    // console.log(document.body.clientWidth);
 
-    if(document.body.clientWidth>768){
-      document.body.style.backgroundColor = "black"
-    }else{
-      document.body.style.backgroundColor = "salmon"
+    // if(document.body.clientWidth>768){
+    //   document.body.style.backgroundColor = "black"
+    // }else{
+    //   document.body.style.backgroundColor = "salmon"
+    // }
+    
+    const body = document.querySelector("body");
+    // console.dir(body);
+    
+
+    if(body.clientWidth>1000){
+      console.log("이 화면크기는 pc버전 입니다");
+      body.textContent="이 디자인은 pc용 디자인입니다";
+    } else if(600 < body.clientWidth){
+      console.log("이 화면크기는 tablit 버전 입니다");
+      body.textContent="이 디자인은 tablit용 디자인입니다";
+    } else {
+      console.log("이 화면크기는 moblie 버전 입니다");
+      body.textContent="이 디자인은 moblie용 디자인입니다";
     }
+    
     
     
   </script>
