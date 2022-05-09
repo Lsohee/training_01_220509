@@ -32,8 +32,24 @@
       body.textContent="이 디자인은 moblie용 디자인입니다";
     }
     
+
     
+    if ("false"){
+      console.log("true")
+    }// 조건의 값이 원시 불리언값을 true로 가지는 참 같은 값 string이라서 출력
     
+    // 데이터 타입도 사실 객체고, 불리언 데이터 타입의 객체에는 false, 0, -0, 0n, "", null, undefined, NaN 이 존재하는 것?
+    // object와 array도 객체임 -> 숫자의 객체가 그 많은 숫자 값들이고, 문자열의 객체가 ""안에 들어가는 모든 값?
+
+    if (NaN){
+      console.log("false1")
+    } // 조건의 값이 원시 불리언 값을 false로 가지는 거짓 같은 값 NaN라서 출력 x
+
+    if ("NaN"){
+      console.log("false2")
+    }// 조건의 값이 원시 불리언값을 true로 가지는 참 같은 값 string이라서 출력
+
+
   </script>
 </body>
 </html>
