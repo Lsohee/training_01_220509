@@ -66,7 +66,8 @@ let make = function(){
   }else{
     console.log("a는 b보다 큽니다")
   }
+  return("바보");
 }
 
 
-make();
+make(); // * 함수 호출
