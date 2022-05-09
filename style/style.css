@@ -1,0 +1,44 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body container {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  overflow: hidden;
+  /* 
+  ?왜 item으로 마크업을 했을때는 live server에서 개발자 도구에는 속성이 들어갔는데 화면상으로는 나오지 않는 걸까
+  * 일단 그냥 div으로 해보기로 함 -> item이라는 태그의 특성이 따로 있나 볼것
+  & item {
+  width:400px;
+  height:400px;
+  background-color: #ccc;
+  }
+  */
+}
+body container > div {
+  width: 400px;
+  height: 400px;
+  background-color: #ccc;
+  margin: 30px;
+}
+body container > div:nth-child(2) {
+  position: relative;
+  top: -430px;
+  left: -430px;
+}
+body container > div:nth-child(3) {
+  position: relative;
+  top: -860px;
+  left: 430px;
+}/*# sourceMappingURL=style.css.map */
